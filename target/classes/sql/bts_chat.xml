@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="chat">
+		<insert id="createChat" parameterType="chatVO">
+			insert into Bts_Chat values(Bts_Chat_seq.nextVal,#{id},#{title},#{options},#{tag},#{product},
+			#{price},#{pay},#{gender},#{personnel},#{place},#{img},#{content},sysdate,#{placeInfo},#{users},#{nick})
+		</insert>
+      <select id="getChatInfo" resultType="chatVO">
+          select * from Bts_Chat
+       </select>
+      <select id="getUniqueChatInfo" resultType="chatVO" parameterType="int">
+          select * from Bts_Chat where num=#{value}
+       </select>
+      	
+      <select id="getMaxNum" resultType="int" >
+          select max(num) from Bts_Chat 
+       </select>
+      	
+      	<update id="setUsers" parameterType="hashmap">
+      		update Bts_Chat set users=users||#{nick} where num=#{num} 
+      	</update>
+      	<update id="chatExit" parameterType="hashmap">
+      		update bts_Chat set users=replace(users,#{nick},'') where num=#{num} 
+      	</update>
+      	<delete id="chatBoom" parameterType="int">
+      		delete from bts_chat where num=#{num} 
+      	</delete>
+      	  <select id="getChatList_1" parameterType="String" resultType="chatVO">
+    	  	  select * from Bts_Chat where tag like '%'||#{value}||'%'
+      	  </select> 
+  		<select id="getChatList_2" parameterType="HashMap" resultType="chatVO">
+	  		select * from Bts_Chat where options = #{options} and tag like '%'||#{tag}||'%'
+  		</select>
+  		<select id="mychat" parameterType="String" resultType="chatVO">
+	  		select * from Bts_Chat where nick=#{nick}
+  		</select>
+  		<select id="inchat" parameterType="HashMap" resultType="chatVO">
+	  		select * from Bts_Chat where id!=#{id} and users like '%'||#{nick}||'%'
+  		</select>
+  		  <update id="modifyChat" parameterType="chatVO">
+  		  	update Bts_Chat set title= #{title}, options= #{options}, tag= #{tag}, product= #{product}, price= #{price}, pay= #{pay}, gender= #{gender}, personnel= #{personnel}, place= #{place}, img= #{img}, content= #{content}, placeInfo = #{placeInfo} where num= #{num}
+  		  </update> 
+	</mapper>

@@ -1,0 +1,58 @@
+	 	.name{
+			text-align:center;
+		}
+		.name>.bts{
+			font-size:5em;
+		}
+
+		.map-name{
+			text-align:center;
+			/* margin-top:-8%; */
+		}
+		.map-name h1{
+			font-size: 40px;
+				margin:0 auto;
+		}
+		.map-setting{
+			/* padding-top:7%; */
+			text-align:center;
+			margin-top:10px;
+		}
+		.map-setting button{
+			width:30%;
+			margin:20px; 
+			font-size:20px;
+			height:60px;  
+		}
+		.map-setting select{
+			width:50%; 
+			font-size:25px;
+			height:50px; 
+		}
+		.map-setting input{
+			width:50%; 
+			font-size:25px;
+			height:50px; 
+		}
+		#address{
+			font-size:20px;
+		}
+		.btn-setting{
+			 text-align:center;
+			 margin-top:25px;
+		}
+		.btn-setting button{
+			width:10em;
+			font-size:20px;
+			margin:5px;
+		}
+@media {
+  	#index{
+  		padding-top:50px;
+   		margin-left:-35%;
+   		height:80%;
+  	} 
+}
+
+}
+	

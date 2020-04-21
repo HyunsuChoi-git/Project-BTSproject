@@ -1,0 +1,275 @@
+/*  웹용768px 이상 */ 
+@media {
+	
+  
+	.web{
+		font-size:45px;
+		min-width: 606;
+		width:100%;
+		height:800px;
+		z-index:1;
+		margin:0;
+	}
+	/*스크롤바*/
+	
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff8000;
+    border-radius: 9px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+  *::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 5px white;
+  }
+
+	/* 1. 맵  */
+	#web_Map{
+		 min-width:603px;
+		 width:100%;
+		 height:100%;
+	}
+	/* 2.맵 아이콘 */
+	
+	.web_Icon{
+		position:absolute;
+		top:10px;
+		z-index:10;
+		font-size:0.6em;
+		color:blue;
+	}
+	
+	.web_Icon a{
+		color:#FF8000;
+	}
+	.web_Icon a:hover{
+		color:white;
+	}
+	
+	
+	/* 3. 방 개설 */
+	.web_Room {
+		font-family: 'Do Hyeon', sans-serif;
+	    display: none; 
+	    background-color:#58ACFA;
+	    height:80%;
+	    width:70%;
+	    max-width:430px;
+	    position:absolute;
+	    z-index:10;
+		top:10%;
+		right:13%;
+		font-size:20px;
+		text-align:center;
+	}
+	.web_Room h1{
+		 color:black;
+		 font-size:25px;
+	}
+	.web_RoomSet input[type="text"]{
+		margin-top:10px;
+		width:75%;
+		text-align:left;	
+	}
+	.web_RoomSet select{
+		margin-top:10px;
+		width:75%;
+	}
+	
+	/* 서로 중복*/
+	.web_Exit {
+	    position: absolute;
+	    left: 50%;
+	    bottom: 10px;
+	    transform: translate(-50%,0);
+	    text-align: center;
+	    font-size: 15px;
+	}   
+	#web_RoomExitBtn{
+	    position: absolute;
+	    left: 15%;
+	    bottom: 10px;
+	    transform: translate(-50%,0);
+	    text-align: center;
+	    font-size: 15px;
+	}   
+	.web_RoomOpen {
+	    position: absolute;
+	    right: 5%;
+	    bottom: 10px;
+	    transform: translate(-50%,0);
+	    text-align: center;
+	    font-size: 15px;
+	}   
+	*{
+	    border-radius: 6px;
+	}
+
+	/* 4. 맵 필터 설정  */
+	.web_MapFilter {
+		font-family: 'Do Hyeon', sans-serif;
+	    display: none; 
+	    background-color:#58ACFA;
+	    height:50%;
+	    width:70%;
+	    position:absolute;
+	    z-index:10;
+		top:25%;
+		right:13%;
+		font-size:30px;
+		text-align:center;
+	}	
+	.web_MFName{
+		height:30%;
+    	margin-top: -40px;
+		
+	}
+	.web_MFName h1{
+		font-size:30px;
+		margin-top: 1em;
+	}
+	
+	.web_MFSetting{
+		height:47%;
+	}
+	.web_MFSetting p{
+		font-size:22px;
+	}
+	.web_MFSetting button{
+		width:60%;
+		font-size:23px;
+		margin:20px;
+	}
+	.web_MFSetting select{
+		width:60%;
+		font-size:23px;
+		margin:10px;
+	}
+	
+	.web_MFSetting input{
+		width: 60%;
+    	font-size: 23px;
+    	margin: 10px;
+	}
+	.web_MFBtn{
+		width: 18em;
+		height:20%;
+	}
+	
+	.web_MFBtn button{
+		font-size:20px;
+		margin-right:15px;
+		margin-left:15px;
+	}
+	
+	/* 5.내 채팅방  */
+	.web_MyRoom {
+		font-family: 'Do Hyeon', sans-serif;
+	    display: none; 
+	    background-color:#58ACFA;
+	    height:65%;
+	    width:70%;
+	    max-width:610px;
+	    position:absolute;
+	    z-index:10;
+		top:10%;
+		right:13%;
+		font-size:20px;
+		text-align:center;
+	}
+	
+	.web_MyRoom p {
+	    margin-top: 80px;
+	}
+	.web_MyRoom h1 {
+		font-size: 32px;
+	}
+	
+	/* 6. 전체 채팅방  */
+	.web_AllRoom {
+		font-family: 'Do Hyeon', sans-serif;
+	    display: none; 
+	    overflow: auto;
+	    background-color:#58ACFA;
+	    height:77%;
+	    width:70%;
+	    position:absolute;
+	    z-index:5;
+		top:10%;
+		right:13%;
+		font-size:20px;
+		text-align:center;
+	}
+	
+	.web_AllRoom p {
+	    margin-top: 80px;
+	}
+	.web_AllRoom h1 {
+		font-size: 32px;
+	}
+
+     #roomContent {
+     	margin: 0 auto;
+        width:13em;
+        height:10em;
+        text-align:center;
+     }
+
+	#roomContent_S {
+		margin-top: 0px;
+	}
+	#roomContent > div {
+	    border: 1px solid #C9C8C6;
+	    height:7em;
+	    word-break:break-all;
+	    overflow: auto;
+	}
+	/* 7.공지사항 */
+	.web_Notice {
+		font-family: 'Do Hyeon', sans-serif;
+	    display: none; 
+	    overflow: auto;
+	    background-color:#58ACFA;
+	    height:77%;
+	    width:70%;
+	    position:absolute;
+	    z-index:5;
+		top:10%;
+		right:13%;
+		font-size:20px;
+		text-align:center;
+	}
+	.web Notice h1{
+		font-size: 32px;
+	}
+	/*8.회원 정보 */
+	.web_Member {
+	    display: none; 
+	    background-color:#58ACFA;
+	    height:30%;
+	    width:70%;
+	    position:absolute;
+	    z-index:10;
+		top:25%;
+		right:13%;
+		text-align:center;
+	}	
+	
+	/* 기본적인 전체 셋팅 */
+	.container .jumbotron, .container-fluid{
+	    padding-left: 5px;
+	    padding-top:0px;
+	    padding-right:0px;
+	    padding-bottom:0px;
+	}
+
+	#popup1{
+		display:none;
+	}
+	
+}
+

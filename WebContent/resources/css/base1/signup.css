@@ -1,0 +1,29 @@
+	 	.name{
+			text-align:center;
+		}
+		.name>.bts{
+			font-size:3em;
+		}
+		.signup-setting{
+			text-align:center;
+		}
+		.signup-setting input{
+			font-size:16px;
+			margin-bottom:5px;
+			padding: 8px;
+			width:50%;
+		}
+
+		.signup-setting button{
+			font-size:22px;
+			margin-bottom:5px;
+			width:55%;
+		}
+@media (min-width: 768px) {
+    #index{
+    	margin-left:-35%;
+    }
+}
+	@media (max-width: 768px) {
+
+	}

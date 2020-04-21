@@ -1,0 +1,57 @@
+@media {
+	.container-fluid {
+		width: 90%;
+		margin:0 auto;
+	}
+	.top-box2{
+		display:inline-block;
+		text-align: center;
+		margin:0 auto;
+		width:80%;
+		min-width:157px;
+	}
+	.navbar-header{
+		margin-left: 18%;
+
+	}
+	.catergory-set ul{
+		padding-left: 0px;
+	}
+	.catergory-set li{
+		list-style:none;
+	}
+	a{
+		text-decoration:none;
+		color:white;
+	}
+	a:hover{
+		text-decoration:none;
+		color:red;
+	}
+	a:active{
+		text-decoration:none;
+		color:red;
+	}
+	
+	.top-box{
+		display: none;
+	}
+}
+/* @media (max-width: 768px) {
+	.top-box2{
+		display:none;
+	}
+	.top-box{
+		display: block;
+	}
+	.rows{
+		margin-top:10px;
+		text-align:center;
+	}
+	#myroom-setting{
+		padding-top:10px; 
+	}
+	#myroom-setting a{
+		color:#2E2E2E;
+	}
+} */

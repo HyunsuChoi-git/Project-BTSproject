@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="member">
+		<insert id="signupMember" parameterType="memberVO">
+			insert into Bts_Member values(#{id},#{pw},#{name},#{gender},#{ssan},#{ph},
+			#{addr},#{email},#{nick},sysdate)
+		</insert>
+		
+		<select id="loginCheck" parameterType="memberVO" resultType="int">
+			select count(*) from Bts_Member where id = #{id} and pw = #{pw}
+		</select>
+		
+		<select id="apiIdCheck" parameterType="String" resultType="int">
+			select count(*) from Bts_Member where id = #{value}
+		</select>
+		
+		<update id="updateMember" parameterType="memberVO">
+			update Bts_Member set pw=#{pw},ph=#{ph},addr=#{addr},email=#{email},nick=#{nick} where id=#{id}
+		</update> 
+		
+		<select id="selectMember" parameterType="String" resultType="memberVO">
+			select * from Bts_Member where id = #{value}
+		</select> 
+		
+		<delete id="deleteMember" parameterType="String">
+			delete from Bts_Member where id = #{value}
+		</delete> 
+		<select id="nickCheck" parameterType="String" resultType="String">
+	         select nick from Bts_Member where id = #{value}
+	    </select>
+	      <select id="selectMember01" parameterType="String" resultType="memberVO">
+	      	select * from Bts_Member where nick = #{nick}
+	      </select> 
+	</mapper>

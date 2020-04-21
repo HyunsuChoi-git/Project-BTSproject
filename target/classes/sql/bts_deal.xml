@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="deal">
+      	<insert id="createDeal" parameterType="dealVO">
+      		insert into bts_Deal values (#{num},#{id},#{dealState},#{users},#{product},#{place},#{price},#{url},#{tid})
+      	</insert>
+      	<select id="getUniqueDeal" parameterType="int" resultType="dealVO">
+      		 select * from bts_deal where num=#{num}
+      	</select>
+      	<select id="dealStartUpdate" parameterType="hashmap">
+ 			 update bts_deal set users=replace(users,#{nick}||'0,',#{nick}||'1,') where num=#{num} 
+      	</select>
+      	<select id="dealMoneyUpdate" parameterType="hashmap">
+ 			 update bts_deal set users=replace(users,#{nick}||'1,',#{nick}||'2,') where num=#{num} 
+      	</select>
+      	<update id="dealStart" parameterType="dealVO">
+ 			 update bts_deal set users=#{users},
+ 			 dealState=#{dealState},product=#{product},place=#{place},price=#{price}
+ 			  where num=#{num} 
+      	</update>
+      	<update id="setDealState" parameterType="hashmap">
+ 			 update bts_deal set dealstate=#{state}  where num=#{num} 
+      	</update>
+	</mapper>

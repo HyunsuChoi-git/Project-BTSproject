@@ -1,0 +1,26 @@
+.container,.jumbotron{
+	min-width:0px;
+}
+.container{
+	margin-top:0px;
+	height: auto;
+}
+.jumbotron{
+	padding-top:5%;
+	height: 417px;
+}
+#nav{
+	height:0px;
+}
+#section{
+	left:8%;
+} 	
+.deal{
+	margin-top:5%;
+	text-align:center;
+	font-size:25px;
+}
+input[type="text"]{
+	font-size:18px;
+	margin:5px;
+}

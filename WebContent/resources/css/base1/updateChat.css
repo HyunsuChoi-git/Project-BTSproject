@@ -1,0 +1,48 @@
+.name{
+text-align:center;
+}
+.name>.bts{
+	font-size:3em;
+}
+.signup-setting{
+	text-align:center;
+}
+.signup-setting input{
+	font-size:16px;
+	margin-bottom:5px;
+	padding: 8px;
+	width:50%;
+}
+.signup-setting button{
+	font-size:22px;
+	margin-bottom:5px;
+	width:55%;
+}
+input[type="text"]{
+	margin:4px;
+	width:318px;
+}
+select{
+	margin:4px;
+	width:318px;
+}
+span{
+	font-size: 25px;
+}
+.container,.jumbotron{
+	min-width:0px;
+}
+.container{
+	margin-top:0px;
+}
+.jumbotron{
+	height: auto;
+}
+#section{
+	left:8%;
+}
+@media (min-width: 768px) {
+    #index{
+    	margin-left:-35%;
+    }
+}

@@ -1,0 +1,54 @@
+ 	.name{
+		text-align:center;
+		margin-top:20px;
+		margin-bottom: 20px;
+	}
+	.name.bts{
+		font-size:5em;
+	}
+	.deal{
+		margin-top:5%;
+		text-align:center;
+	}
+	#login input[type="text"]{
+		font-size:25px;margin-bottom:5px;
+	}
+	.g-signin2{
+		display: none;
+	}
+	#login input[type="submit"]{
+		font-size:25px;
+		margin-bottom:20px;
+		width:314px;
+	}
+	.btn-setting button{
+		font-size:25px;
+		margin-bottom:5px;
+		width:400px;
+	}
+	.container,.jumbotron{
+		min-width:0px;
+	}
+	.container,.jumbotron{
+		height: 512px;
+	}
+	#nav{
+		height: 0px;
+	}
+	#section{
+		left:8%;
+	}
+@media (min-width: 768px) {
+   #index{
+   	margin-left:-35%;
+   }
+}
+	@media (max-width: 768px) {
+		.name{
+			margin-top:-40px;
+		}
+	.deal{
+		padding-top:10%;
+		margin-top:-10%;
+	}
+}

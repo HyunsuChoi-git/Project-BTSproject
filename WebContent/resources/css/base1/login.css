@@ -1,0 +1,41 @@
+ 	.name{
+		text-align:center;
+		margin-top:20px;
+		margin-bottom: 20px;
+	}
+	.name>.bts{
+		font-size:5em;
+	}
+	.login{
+		margin-top:5%;
+		text-align:center;
+	}
+	#login input[type="text"]{
+		font-size:25px;margin-bottom:5px;
+	}
+	.g-signin2{
+		display: none;
+	}
+	.btn-setting input[type="submit"]{
+		font-size:25px;
+		margin-bottom:5px;
+		width:314px;
+	}
+	.btn-setting button{
+		font-size:25px;
+		margin-bottom:5px;
+		width:314px;
+	}
+	@media  {
+	   #index{
+	   	margin-left:-35%;
+	   	height:80%;
+	   	padding-top:50px;
+	   }
+	}
+	
+	.login{
+			padding-top:10%;
+			margin-top:-10%;
+	}
+}
