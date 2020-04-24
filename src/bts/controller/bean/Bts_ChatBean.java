@@ -294,6 +294,8 @@ public class Bts_ChatBean {
 		
 		return map;
 	}
+	
+	//맵->JSON 형식으로 파싱하여 데이터 전달
 	@RequestMapping(value = "roomInfo", headers="Accept=*/*",  produces="application/json")
 	@ResponseBody
 	public Map roomInfo(int num){

@@ -137,6 +137,8 @@ public class Bts_MemberBean {
 	@RequestMapping("delete")
 	public void delete() throws Exception {
 		String id=(String)session.getAttribute("sessionId");
+		String token=(String)session.getAttribute("kakaotoken");
+		login.unlink(token);
 		memberDAO.deleteMember(id);
 		response.sendRedirect("logout");
 	}

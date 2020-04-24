@@ -35,6 +35,7 @@ public class Bts_Bean {
 		uri=request.getRequestURI();
 	}
 	
+	//재사용을 위한 맵핑 처리
 	@RequestMapping("*.1")
 	public String all1() {
 		return uri.split("/")[3];

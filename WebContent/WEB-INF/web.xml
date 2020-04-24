@@ -25,10 +25,8 @@
 		<!-- 바뀌면안됨 -->
 			<param-name>contextConfigLocation</param-name>
 			<param-value>
-				<!-- /WEB-INF/aop/aop-config.xml -->
 				/WEB-INF/controller/ban-Controller.xml
 				/WEB-INF/controller/bts-Controller.xml
-				<!-- /WEB-INF/controller/bts-Chat.xml -->
 				/WEB-INF/controller/spring-servlet.xml
 			</param-value>
 		</init-param>

@@ -38,6 +38,7 @@
 		<property name="defaultEncoding" value="utf-8"/>
 	</bean>
 	
+	<!-- MyBatis 설정 -->
 	<bean 
 		id="dataSource" 
 		class="org.apache.commons.dbcp.BasicDataSource"

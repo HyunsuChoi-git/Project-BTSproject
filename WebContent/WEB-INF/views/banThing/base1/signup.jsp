@@ -8,8 +8,7 @@
 		<img width="480" style="margin-top:30px;" height="160" src="<c:url value="/resources/img/logo.jpg"/>"></h1>
 	</div>
 	<div class="signup-setting">
-	<!-- //onsubmit="return check()" -->
-		<form name="signUpForm" action="signup.1"  method="post">
+		<form name="signUpForm" action="signup.1"  method="post" onsubmit="return check()">
 			<!-- 플랫폼 회원가입 -->
 			<c:if test="${not empty id}" >
 				<input type="hidden" name="id" value="${id}"><br/>
@@ -78,10 +77,10 @@
 			alert("아이디를 입력하세요.");
 			return false;
 		}
-		if(!idReg.test(signup.id.value) || regExp.test(signup.id.value)){
+/* 		if(!idReg.test(signup.id.value) || regExp.test(signup.id.value)){
 			alert("아이디는 6~16자 사이의 영문 소문자+숫자만 가능합니다.");
 			return false;
-		}
+		} */
 		if(!signup.pw.value){
 			alert("비밀번호를 입력하세요.");
 			return false;
