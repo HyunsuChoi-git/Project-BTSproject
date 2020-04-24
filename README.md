@@ -9,7 +9,7 @@
 ## 개발 환경
 - OS : Window 10
 - Development Tool : Eclipse
-- Framework : Spring, BootStrap
+- Framework : Spring (MVC), BootStrap
 - Language/Skills : Java, Javascript, Jquery, Ajax, Rest Api, HTML, CSS
 - DB : Oracle DB(+Mybatis)
 
@@ -17,7 +17,7 @@
 
 ## 담당 역할
 
-- Spring Framework와 mybatis를 이용한 회원가입, 로그인/로그아웃 기능
+- Spring Framework와 Oracle DB (with mybatis)을 이용한 회원가입, 로그인/로그아웃 기능
   (일반 회원가입, 카카오 로그인)
 - 채팅 방 개설 시 사용자로부터 채팅 방 정보를 입력 받아 DB에 저장 
 - 사용자가 맵 필터로 검색 시,  지역과 카테고리, 검색어를 입력 받아 원하는 
