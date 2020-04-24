@@ -12,7 +12,7 @@
 - Framework : Spring (MVC), BootStrap
 - Language/Skills : Java, Javascript, Jquery, Ajax, Rest Api, HTML, CSS
 - DB : Oracle DB(+Mybatis)
-- ETS : JSP
+- ETC : JSP
 
 ## 개발 인원 :3명
 
