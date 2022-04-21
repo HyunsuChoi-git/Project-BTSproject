@@ -26,5 +26,3 @@
 - 채팅 방에 입장한 사용자를 화면에 띄우고 다른 참여자의 정보를 확인 할 수    
    있는 버튼 생성. 
 - CSS 보조 역할 ( 화면크기에 따라 나타나는 오류 수정, 채팅 방 페이지 css 부분 담당 )
-
-### Clone -> 개발 툴에서 Import -> Oracle DB ID/PW 변경 후 localhost:8080/BTS/BanThing/login.1 접속 가능합니다.
